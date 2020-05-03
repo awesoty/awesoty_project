@@ -24,7 +24,7 @@
                 <label class="sr-only">Estate</label>
                 <select name="estate" class="form-control">
                   <option selected="true" disabled="disabled">Estate (All)</option>
-                    {% for key,value in estate_choices.items %}
+                    {% for key, value in estate_choices.items %}
                       <option value="{{ key }}"
                       {% if key == values.estate %}
                         selected
@@ -40,7 +40,7 @@
                 <label class="sr-only">Bedrooms</label>
                 <select name="bedrooms" class="form-control">
                   <option selected="true" disabled="disabled">Bedrooms (Any)</option>
-                    {% for key,value in bedroom_choices.items %}
+                    {% for key, value in bedroom_choices.items %}
                       <option value="{{ key }}"
                       {% if key == values.bedrooms %}
                         selected
@@ -52,7 +52,7 @@
               <div class="col-md-6 mb-3">
                 <select name="price" class="form-control">
                   <option selected="true" disabled="disabled">Max Price (All)</option>
-                    {% for key,value in price_choices.items %}
+                    {% for key, value in price_choices.items %}
                       <option value="{{ key }}"
                       {% if key == values.price %}
                         selected
